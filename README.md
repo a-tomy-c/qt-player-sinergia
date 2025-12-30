@@ -14,13 +14,16 @@
 </h3>
 
 ------------------------------------------------------------------------------------
-![Reproductor Sinergia/Doraemon](views/diagrama.png)
+![Reproductor Sinergia/Doraemon](views/diagrama.png "Reproductor Sinergia/Doraemon")
+<!-- ![Texto alternativo](/ruta/a/la/imagen.jpg "Título alternativo") -->
 ------------------------------------------------------------------------------------
-![Reproductor Sinergia/Doraemon](views/inirepro.png)
+![Reproductor Sinergia/Doraemon](views/inirepro.png "Reproductor Sinergia/Doraemon")
 ------------------------------------------------------------------------------------
-![Reproductor Sinergia/Doraemon](views/inirepromax.png)
+![Reproductor Sinergia/Doraemon](views/inirepromax.png "Reproductor Sinergia/Doraemon")
 ------------------------------------------------------------------------------------
-<a href="https://youtu.be/P1juQCHdCqg" target="_blank">
+[!["Reproductor Sinergia/Doraemon"](https://img.youtube.com/vi/P1juQCHdCqg/0.jpg "Reproductor Sinergia/Doraemon")](https://youtu.be/P1juQCHdCqg)
+
+<!-- <a href="https://youtu.be/P1juQCHdCqg" target="_blank">
 <img src="https://img.youtube.com/vi/P1juQCHdCqg/0.jpg" alt="Watch the video" width="1200" border="10" />
-</a>
+</a> -->
 
