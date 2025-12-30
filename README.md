@@ -14,4 +14,4 @@
 
 ------------------------------------------------------------------------------------
 <!-- ![Reproductor Sinergia/Doraemon](https://youtu.be/P1juQCHdCqg) -->
-[Reproductor Sinergia/Doraemon](https://youtu.be/P1juQCHdCqg)
+[Reproductor Sinergia/Doraemon](https://youtu.be/P1juQCHdCqg){width="560" height="315"}
