@@ -14,6 +14,8 @@
 
 ------------------------------------------------------------------------------------
 <!-- ![Reproductor Sinergia/Doraemon](https://youtu.be/P1juQCHdCqg) -->
-[Reproductor Sinergia/Doraemon](https://youtu.be/P1juQCHdCqg)
+<!-- [Reproductor Sinergia/Doraemon](https://youtu.be/P1juQCHdCqg) -->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/P1juQCHdCqg?si=J54XOUWps59Twz2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<a href=https://youtu.be/P1juQCHdCqg" target="_blank">
+    <img src="https://img.youtube.com/vi/P1juQCHdCqg/0.jpg" alt="Watch the video" width="240" height="180" border="10" />
+</a>
