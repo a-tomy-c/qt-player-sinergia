@@ -335,7 +335,7 @@
       </property>
       <widget class="QFrame" name="frLista">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -381,7 +381,7 @@
       </widget>
       <widget class="QFrame" name="frPlayer">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
