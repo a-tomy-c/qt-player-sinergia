@@ -30,6 +30,8 @@
 - la ventana principal ya tiene metodos basicos
 - en el archivo `tests_so` esta la prueba con el **window frameless**
 - agregue hotkey "Ctrl + Q" para salir
+- agregue hotkey "t" para cambiar entre el logo y el player (temporal)
+- agregue hotkey "y" para mostrar/ocultar info (solo para mostrar mensajes para el desarrollo, no para el usuario final)
 - [ ] otros hotkeys ... 
 
 
@@ -43,6 +45,14 @@
 ### widget Player
 - he creado el widget player (solo tiene funciones basicas)
 
+### widget Body
+contiene el splitter, frames para la playlist y para el player
+- he creado el widget body (poco o nada lleva, por el momento)
+
+### widget Control
+contiene los controles para el player
+- he creado el widget control (poco o nada lleva, por el momento)
+
 
 ### Interfaz
 - corte la playlist y lo coloque en un widget independiente
@@ -54,15 +64,19 @@
 la estructura actual y los archivos que ya estoy usando (ire agregando y reusando otras)
 - todo lo que cambie esta en la carpeta "sin_orden" de manera temporal mientras se define la estructura.
 
----
-
 por el momento la estructura esta asi, solo es temporal (puede cambiarse despues)
 
 ```
-.
+├── main_player.py
+├── widget_info.py
+|
 ├── widget_body
+│   ├── __init__.py
+│   ├── ui_widget_body.py
 │   └── ui_widget_body.ui
 ├── widget_control
+│   ├── __init__.py
+│   ├── ui_widget_control.py
 │   └── ui_widget_control.ui
 ├── widget_player
 │   └── __init__.py
@@ -75,7 +89,7 @@ por el momento la estructura esta asi, solo es temporal (puede cambiarse despues
     ├── ui_main_window.py
     └── ui_main_window.ui
 
-6 directories, 9 files
+6 directories, 15 files
 ```
 
 

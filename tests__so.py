@@ -3,6 +3,7 @@ from PySide6.QtCore import Qt
 from PySide6.QtGui import QIcon
 from sin_orden.window_frameless import WindowFrameless
 from sin_orden.widget_playlist import WidgetPlaylist
+from sin_orden.main_player import MainPlayer
 
 
 class TestVentanaFrameless(WindowFrameless):
@@ -53,6 +54,15 @@ class TestWidgets(QWidget):
             self.wplaylist.append(text)
 
 
+class TestMainPlayer(MainPlayer):
+    def __init__(self, *args, **kw):
+        super().__init__(*args, **kw)
+        self.__cnf_TestMainPlayer()
+
+    def __cnf_TestMainPlayer(self):
+        self.resize(1000, 650)
+
+
 
 if __name__ == '__main__':
     import sys
@@ -61,11 +71,13 @@ if __name__ == '__main__':
     # mv = TestVentanaFrameless()
 
     # TEST OTROS WIDGETS
-    mv = TestWidgets()
+    # mv = TestWidgets()
 
     # TEST PLAYLIST
-    mv.test_playlist()
+    # mv.test_playlist()
 
+    # TEST MAINPLAYER
+    mv = TestMainPlayer()
 
     
     mv.show()
