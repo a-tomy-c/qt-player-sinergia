@@ -72,6 +72,7 @@ class Ui_WidgetControl(object):
         icon2.addFile(u":/views/icons/play.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.btPlay.setIcon(icon2)
         self.btPlay.setIconSize(QSize(25, 25))
+        self.btPlay.setCheckable(True)
         self.btPlay.setFlat(True)
 
         self.horizontalLayout.addWidget(self.btPlay)
@@ -150,6 +151,7 @@ class Ui_WidgetControl(object):
         icon8.addFile(u":/views/icons/shuffle-off.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.btShuffle.setIcon(icon8)
         self.btShuffle.setIconSize(QSize(25, 25))
+        self.btShuffle.setCheckable(False)
         self.btShuffle.setFlat(True)
 
         self.horizontalLayout.addWidget(self.btShuffle)
@@ -186,6 +188,8 @@ class Ui_WidgetControl(object):
         icon10.addFile(u":/views/icons/box-list.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.btLista.setIcon(icon10)
         self.btLista.setIconSize(QSize(25, 25))
+        self.btLista.setCheckable(True)
+        self.btLista.setChecked(True)
         self.btLista.setFlat(True)
 
         self.horizontalLayout.addWidget(self.btLista)
@@ -213,6 +217,7 @@ class Ui_WidgetControl(object):
         self.btVolumen.setIcon(icon12)
         self.btVolumen.setIconSize(QSize(25, 25))
         self.btVolumen.setCheckable(True)
+        self.btVolumen.setChecked(True)
         self.btVolumen.setFlat(True)
 
         self.horizontalLayout.addWidget(self.btVolumen)

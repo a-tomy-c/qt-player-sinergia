@@ -40,6 +40,7 @@
 - en el archivo `tests_so` esta la prueba con el **playlist**
 - [x] agregar archivos
 - agregado set_paths para pasar una lista de archivos
+- doble click sobre un item (para reproducir)
 
 ### widget Player
 - he creado el widget player (solo tiene funciones basicas)
@@ -51,11 +52,15 @@ contiene el splitter, frames para la playlist y para el player
 ### widget Control
 contiene los controles para el player
 - he creado el widget control (poco o nada lleva, por el momento)
+- toggled playlist
+- play / pause (toggled)
+- stop
 
 ### Interfaz
 - corte la playlist y lo coloque en un widget independiente
 - cambie un label por un textedit (lbMeta)
 - lo dividi en partes la interfaz
+- los botones (play, volumen, playlist) ahora son checkeables
 
 ### Dialogs
 - agregue un QDialog para seleccionar archivos

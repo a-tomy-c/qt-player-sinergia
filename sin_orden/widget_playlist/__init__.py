@@ -1,6 +1,6 @@
 from pathlib import Path
 from PySide6.QtWidgets import QWidget
-from PySide6.QtCore import Qt, QSortFilterProxyModel
+from PySide6.QtCore import Qt, QSortFilterProxyModel, QModelIndex
 from PySide6.QtGui import QStandardItem, QStandardItemModel
 from sin_orden.widget_playlist.ui_widget_playlist import Ui_WidgetPlaylist
 
@@ -134,6 +134,11 @@ class WidgetPlaylist(QWidget, Ui_WidgetPlaylist):
         item = self.model.item(row)
         if item:
             return item.data(Qt.UserRole)
+        
+    def get_path_from_index(self, qindex:QModelIndex):
+        """retorna el path dado un qmodelindex"""
+        index = self.model_filtered.mapToSource(qindex)
+        return self.get_path_from_row(index.row())
 
     def selection_set_row(self, row:int):
         """asigna la fila seleccionada"""
@@ -159,6 +164,4 @@ class WidgetPlaylist(QWidget, Ui_WidgetPlaylist):
         """asigna una lista de archivos"""
         for path in paths:
             self.append(path)
-
-
-        
+       

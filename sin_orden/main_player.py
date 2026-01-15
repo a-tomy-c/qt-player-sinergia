@@ -37,7 +37,11 @@ class MainPlayer(WindowFrameless):
         self.vly_content.setStretch(2, 1)
         self.wcontrol.btArchivo.clicked.connect(self.showDialogFiles)
         self.wcontrol.btCarpeta.clicked.connect(self.showDialogDir)
+        self.wcontrol.btLista.toggled.connect(self.togglePlaylist)
 
+        self.wplaylist.ltLista.doubleClicked.connect(self.playlist_item_selected)
+        self.wcontrol.btStop.clicked.connect(self.stop)
+        self.wcontrol.btPlay.clicked.connect(self.togglePlayback)
 
     def _hotkeysPlayer(self):
         self.hk_toggle_logo = QShortcut(QKeySequence("t"), self)
@@ -72,3 +76,36 @@ class MainPlayer(WindowFrameless):
     
     def showDialogDir(self):
         self._dialogSelect(dir=True)
+
+    def togglePlaylist(self, b:bool):
+        """alternar visibilidad de la playlist"""
+        self.wbody.frLista.setHidden(not b)
+
+    def playlist_item_selected(self, index=None):
+        """doble click reproduce el archivo seleccionado"""
+        path = self.wplaylist.get_path_from_index(index)
+        self.winfo.file('FILE: ', path)
+        self.wplayer.setMedia(file=path)
+        self.play()
+
+    def togglePlayback(self):
+        """alterna entre play y pause"""
+        self.play() if self.wcontrol.btPlay.isChecked() else self.pause()
+        self.winfo.config('[wplayer]', f'playing:{self.wcontrol.btPlay.isChecked()}')
+
+    def play(self):
+        self.wplayer.play()
+        self.wbody.showLogo(False)
+        self.wcontrol.btPlay.setChecked(True)
+
+    def pause(self):
+        self.wplayer.pause()
+        self.wcontrol.btPlay.setChecked(False)
+
+    def stop(self):
+        self.wplayer.stop()
+        self.wcontrol.btPlay.setChecked(False)
+        self.winfo.config('[wplayer]', 'stopped...')
+
+    def closeEvent(self, event):
+        self.stop()
