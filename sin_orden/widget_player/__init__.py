@@ -15,6 +15,7 @@ class WidgetPlayer(QMediaPlayer):
         self.setVideoOutput(self.video_widget)
         self.setAudioOutput(self.audio_output)
         self._JUMP = 5000
+        self.VOL = 0
 
     def setMedia(self, file:str):
         """asignamos el archivo de video"""
@@ -58,3 +59,30 @@ class WidgetPlayer(QMediaPlayer):
     def getWidget(self) -> QVideoWidget:
         """retorna el widget para agregar a la ui"""
         return self.video_widget
+    
+    def setMuted(self, muted:bool=True):
+        self.audio_output.setMuted(muted)
+        
+    def currentMedia(self) -> str:
+        """retorna la ruta del archivo actual"""
+        source = self.source()
+        return source.toLocalFile() if source.isValid() else ''
+
+    def get_state(self) -> str:
+        match self.playbackState():
+            case QMediaPlayer.PlaybackState.StoppedState:
+                return "stopped"
+            case QMediaPlayer.PlaybackState.PlayingState:
+                return "playing"
+            case QMediaPlayer.PlaybackState.PausedState:
+                return "paused"
+            
+    def is_playing(self) -> bool:
+        return self.isPlaying()
+    
+    def is_paused(self) -> bool:
+        return True if self.get_state() == "paused" else False
+    
+    def is_stopped(self) -> bool:
+        return True if self.get_state() == "stopped" else False
+    

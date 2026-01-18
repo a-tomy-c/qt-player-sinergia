@@ -30,40 +30,64 @@
 - la ventana principal ya tiene metodos basicos
 - en el archivo `tests_so` esta la prueba con el **window frameless**
 - agregue hotkey "Ctrl + Q" para salir
+- agregue hotkey "t" para cambiar entre el logo y el player (temporal)
+- agregue hotkey "y" para mostrar/ocultar info (solo para mostrar mensajes para el desarrollo, no para el usuario final)
 - [ ] otros hotkeys ... 
-
 
 ### widget Playlist
 - la interfaz y metodos de la playlist estan ahora en un paquete
 - agregue los metodos que faltaban de (seleccion primero y ultimo) el de agregar lo hare luego (necesitare el dialog)
 - en el archivo `tests_so` esta la prueba con el **playlist**
-- [ ] agregar archivos
-
+- [x] agregar archivos
+- agregado set_paths para pasar una lista de archivos
+- doble click sobre un item (para reproducir)
 
 ### widget Player
 - he creado el widget player (solo tiene funciones basicas)
+- agregue metodos para obtener estados
 
+### widget Body
+contiene el splitter, frames para la playlist y para el player
+- he creado el widget body (poco o nada lleva, por el momento)
+
+### widget Control
+contiene los controles para el player
+- he creado el widget control (poco o nada lleva, por el momento)
+- toggled playlist
+- play / pause (toggled)
+- stop
 
 ### Interfaz
 - corte la playlist y lo coloque en un widget independiente
 - cambie un label por un textedit (lbMeta)
 - lo dividi en partes la interfaz
+- los botones (play, volumen, playlist) ahora son checkeables
 
+### Dialogs
+- agregue un QDialog para seleccionar archivos
+- agregue un QDialog para seleccionar un directorio (a este se le aplican un filtro con los formatos admitidos)
 
 ## ESTRUCTURA
 la estructura actual y los archivos que ya estoy usando (ire agregando y reusando otras)
 - todo lo que cambie esta en la carpeta "sin_orden" de manera temporal mientras se define la estructura.
 
----
-
 por el momento la estructura esta asi, solo es temporal (puede cambiarse despues)
 
 ```
-.
+├── config_sinergia.yml
+├── dialog_files.py
+├── main_player.py
+├── read_configs.py
+|
 ├── widget_body
+│   ├── __init__.py
+│   ├── ui_widget_body.py
 │   └── ui_widget_body.ui
 ├── widget_control
+│   ├── __init__.py
+│   ├── ui_widget_control.py
 │   └── ui_widget_control.ui
+├── widget_info.py
 ├── widget_player
 │   └── __init__.py
 ├── widget_playlist
@@ -75,8 +99,27 @@ por el momento la estructura esta asi, solo es temporal (puede cambiarse despues
     ├── ui_main_window.py
     └── ui_main_window.ui
 
-6 directories, 9 files
+6 directories, 18 files
 ```
+
+### Configuraciones
+- agregue un archivo `config_sinergia.yml` que contiene las configuraciones (las ire colocando segun vaya avanzando)
+- cree el modulo para leer las configuracion
+
+
+## MAIN PLAYER
+agregue los metodos para:
+- play / pause
+- next, previous, (de la playlist tambien)
+- abrir y seleccionar archivos / carpeta (uso filtro para solo los formatos admitidos)
+- volumen: asignar el valor al volumen y alternar mute
+- mostrar duracion del archivo seleccionado (en proceso)
+- tiempo: recorrido del slider (asignacion de rangos)
+- mostrar en label tiempo transcurrido y duracion
+- **fix** al ordenar la lista se perdia la seleccion (ya se corrigio)
+- conecte los metodos que faltaban para la playlist (agregar, eliminar y busqueda)
+- fix: toggle muted
+- deshabilite "onTop" porque causa conflicto con el video (desaparece)
 
 
 

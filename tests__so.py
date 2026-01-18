@@ -3,6 +3,8 @@ from PySide6.QtCore import Qt
 from PySide6.QtGui import QIcon
 from sin_orden.window_frameless import WindowFrameless
 from sin_orden.widget_playlist import WidgetPlaylist
+from sin_orden.main_player import MainPlayer
+from sin_orden.dialog_files import DialogFiles
 
 
 class TestVentanaFrameless(WindowFrameless):
@@ -52,6 +54,42 @@ class TestWidgets(QWidget):
         for text in items:
             self.wplaylist.append(text)
 
+    def test_dialog(self):
+        self.resize(350, 250)
+        self.dg = DialogFiles()
+        self.btn = QPushButton('open Dialog')
+        self.vly.addWidget(self.btn)
+        self.btn.clicked.connect(self.show_dialog)
+
+    def show_dialog(self):
+        self.dg.show_dialog_select_files()
+        # self.dg.show_dialog_select_dir()
+
+        selected_files = self.dg.get_selected_files()
+        for path in selected_files:
+            print(path)
+        for msg in self.dg._state:
+            print(msg)
+
+
+class TestMainPlayer(MainPlayer):
+    def __init__(self, *args, **kw):
+        super().__init__(*args, **kw)
+        self.__cnf_TestMainPlayer()
+
+    def __cnf_TestMainPlayer(self):
+        self.resize(1000, 650)
+        self._test_videos()
+
+    def _test_videos(self):
+        vs = [
+            '/run/media/atomyc/Data/Video/Rammstein - Frühling in Paris (Sub Español - Lyrics) ｜ 4K [iXuKlJPtyuE].mp4',
+            '/run/media/atomyc/Data/Video/Element a440 - Dance Dead [ADah1sSeen4].mp4',
+            '/run/media/atomyc/Data/Video/IGORRR - VERY NOISE [Osqf4oIK0E8].mp4',
+            '/run/media/atomyc/Data/Video/Moonlighting ｜ Retro Poland Original [K4k1t1Misrk]a.mp4'
+        ]
+        self.wplaylist.set_paths(vs)
+
 
 
 if __name__ == '__main__':
@@ -61,11 +99,16 @@ if __name__ == '__main__':
     # mv = TestVentanaFrameless()
 
     # TEST OTROS WIDGETS
-    mv = TestWidgets()
+    # mv = TestWidgets()
 
     # TEST PLAYLIST
-    mv.test_playlist()
+    # mv.test_playlist()
 
+    # TEST MAINPLAYER
+    mv = TestMainPlayer()
+
+    # TEST DIALOG FILES
+    # mv.test_dialog()
 
     
     mv.show()

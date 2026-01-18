@@ -64,3 +64,7 @@ class WindowFrameless(QMainWindow, Ui_MainWindow):
         """activar atajos de teclado"""
         self.hk_close = QShortcut(QKeySequence("Ctrl+Q"), self)
         self.hk_close.activated.connect(self.close)
+
+    def setTitle(self, title:str):
+        """asigna titulo"""
+        self.lbTitulo.setText(title)
