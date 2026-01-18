@@ -79,6 +79,16 @@ class TestMainPlayer(MainPlayer):
 
     def __cnf_TestMainPlayer(self):
         self.resize(1000, 650)
+        self._test_videos()
+
+    def _test_videos(self):
+        vs = [
+            '/run/media/atomyc/Data/Video/Rammstein - Frühling in Paris (Sub Español - Lyrics) ｜ 4K [iXuKlJPtyuE].mp4',
+            '/run/media/atomyc/Data/Video/Element a440 - Dance Dead [ADah1sSeen4].mp4',
+            '/run/media/atomyc/Data/Video/IGORRR - VERY NOISE [Osqf4oIK0E8].mp4',
+            '/run/media/atomyc/Data/Video/Moonlighting ｜ Retro Poland Original [K4k1t1Misrk]a.mp4'
+        ]
+        self.wplaylist.set_paths(vs)
 
 
 

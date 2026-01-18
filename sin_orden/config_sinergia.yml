@@ -16,3 +16,4 @@ formats:
   - '*.aac'
   - '*.m4a'
 
+volume-init: 60

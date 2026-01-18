@@ -44,6 +44,7 @@
 
 ### widget Player
 - he creado el widget player (solo tiene funciones basicas)
+- agregue metodos para obtener estados
 
 ### widget Body
 contiene el splitter, frames para la playlist y para el player
@@ -104,3 +105,21 @@ por el momento la estructura esta asi, solo es temporal (puede cambiarse despues
 ### Configuraciones
 - agregue un archivo `config_sinergia.yml` que contiene las configuraciones (las ire colocando segun vaya avanzando)
 - cree el modulo para leer las configuracion
+
+
+## MAIN PLAYER
+agregue los metodos para:
+- play / pause
+- next, previous, (de la playlist tambien)
+- abrir y seleccionar archivos / carpeta (uso filtro para solo los formatos admitidos)
+- volumen: asignar el valor al volumen y alternar mute
+- mostrar duracion del archivo seleccionado (en proceso)
+- tiempo: recorrido del slider (asignacion de rangos)
+- mostrar en label tiempo transcurrido y duracion
+- **fix** al ordenar la lista se perdia la seleccion (ya se corrigio)
+- conecte los metodos que faltaban para la playlist (agregar, eliminar y busqueda)
+- fix: toggle muted
+- deshabilite "onTop" porque causa conflicto con el video (desaparece)
+
+
+
