@@ -13,8 +13,7 @@ class SinergiaPlayer(WidgetWindow):
         self.setWindowTitle('SinergiaPlayer')
         self.resize(800, 500)
 
-    def __add_wg_body(self):
-        ...
+    
 
 
 if __name__ == '__main__':

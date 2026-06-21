@@ -6,9 +6,16 @@ media player usando pyside6
 
 
 ---
-## Notas
+## Notes
 
-- cree los widgets (no tienen metodos y falta inicializar)
+- cree los widgets (no tienen metodos)
 - la ventana principal fue inicizada
+- uni los widgets a la ventana principal (falta adecuar dimensiones)
+
+
+## todo
+- [ ] crear widget player
+
+
 
 
