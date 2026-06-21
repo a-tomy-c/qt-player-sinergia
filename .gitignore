@@ -4,6 +4,8 @@ otros/
 **iconW/
 **.code-workspace
 **.txt
+**.log
+logs/
 
 # SO
 .DS_Store

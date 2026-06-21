@@ -12,6 +12,9 @@ from ..widget_body import WidgetBody
 from ..widget_playlist import WidgetPlaylist
 from ..widget_control import WidgetControl
 from ...configuration_loader import configs as cf
+from ...logging_config import logger
+
+log = logger.get_logger('window')
 
 
 class WidgetWindow(QMainWindow, Ui_MainWindow):
@@ -48,4 +51,6 @@ class WidgetWindow(QMainWindow, Ui_MainWindow):
         height = cf.get('window.height', 380)
         self.resize(width,height)
         width_playlist = cf.get('w-playlist.width', 200)
+        log.info('Configuracion cargada.')
+
         self.w_body.split_body.setSizes([width_playlist, width-width_playlist])

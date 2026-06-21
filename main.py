@@ -4,8 +4,11 @@ from PySide6.QtWidgets import QApplication, QWidget, QPushButton, QVBoxLayout, Q
 from PySide6.QtCore import Qt
 from PySide6.QtGui import QIcon
 
-sys.path.insert(0, str(Path(__file__).parent / "src"))
+ROOT_DIR = Path(__file__).parent
+DIR_RSC = ROOT_DIR.joinpath('rsc')
+sys.path.insert(0, str(DIR_RSC))
 from rsc.widgets.widget_window import WidgetWindow
+
 
 
 class SinergiaPlayer(WidgetWindow):

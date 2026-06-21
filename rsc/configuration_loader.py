@@ -40,5 +40,5 @@ class ConfigurationLoader:
 
 
 base_path = Path(__file__).parent.parent
-config_path = f'{base_path}{os.sep}assets{os.sep}config_sinergia.yml'
-configs = ConfigurationLoader(config_path)
+config_path = base_path.joinpath('assets', 'config_sinergia.yml')
+configs = ConfigurationLoader(config_path.as_posix())
