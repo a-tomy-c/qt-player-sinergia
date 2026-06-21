@@ -1,0 +1,6 @@
+otros/
+**__pycache__/
+.vscode
+**iconW/
+**.code-workspace
+**.txt

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
+<svg
+   width="798.71667"
+   height="501.24979"
+   viewBox="0 -4.5 23.9615 15.037494"
+   version="1.1"
+   fill="#000000"
+   id="svg1"
+   sodipodi:docname="up-arrow.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="23.9615"
+       height="15.037494"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <g
+     id="SVGRepo_iconCarrier"
+     transform="translate(-0.00375,-4.4850058)">
+    <title
+       id="title1">chevron-up</title>
+    <desc
+       id="desc1">Created with Sketch Beta.</desc>
+    <defs
+       id="defs1" />
+    <g
+       id="Page-1"
+       stroke="none"
+       stroke-width="1"
+       fill="none"
+       fill-rule="evenodd"
+       sketch:type="MSPage"
+       transform="matrix(1,0,0,-1,0,15.007506)">
+      <g
+         id="Icon-Set-Filled"
+         sketch:type="MSLayerGroup"
+         transform="translate(-521,-1202)"
+         fill="#fc622f">
+        <path
+           d="m 544.345,1213.39 -9.73,-10.79 c -0.448,-0.45 -1.045,-0.65 -1.631,-0.61 -0.586,-0.04 -1.182,0.16 -1.63,0.61 l -9.73,10.79 c -0.827,0.83 -0.827,2.18 0,3.01 0.828,0.83 2.169,0.83 2.997,0 l 8.363,-9.27 8.365,9.27 c 0.827,0.83 2.169,0.83 2.996,0 0.827,-0.83 0.827,-2.18 0,-3.01"
+           id="chevron-up"
+           sketch:type="MSShapeGroup" />
+      </g>
+    </g>
+  </g>
+</svg>

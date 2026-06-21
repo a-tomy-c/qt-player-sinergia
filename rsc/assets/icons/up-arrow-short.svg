@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
+<svg
+   width="799.99146"
+   height="444.43494"
+   viewBox="0 0 17.999808 9.9997861"
+   fill="#000000"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="down-arrow-short.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="17.999807"
+       height="9.9997864"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <g
+     id="SVGRepo_iconCarrier"
+     transform="matrix(1,0,0,-1,-2.1352345e-4,13.999786)">
+    <path
+       fill="#fc622f"
+       d="m 17.707,5.707 -8,8 a 1,1 0 0 1 -1.414,0 l -8,-8 A 1,1 0 0 1 1,4 H 17 A 1,1 0 0 1 17.924,4.617 0.97,0.97 0 0 1 18,5 1,1 0 0 1 17.707,5.707 Z"
+       id="path1" />
+  </g>
+</svg>
