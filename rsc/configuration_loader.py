@@ -39,6 +39,6 @@ class ConfigurationLoader:
         return value
 
 
-base_path = Path(__file__).parent
-config_path = f'{base_path}{os.sep}config_sinergia.yml'
-settings = ConfigurationLoader(config_path)
+base_path = Path(__file__).parent.parent
+config_path = f'{base_path}{os.sep}assets{os.sep}config_sinergia.yml'
+configs = ConfigurationLoader(config_path)

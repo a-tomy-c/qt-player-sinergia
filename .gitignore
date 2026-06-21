@@ -4,3 +4,7 @@ otros/
 **iconW/
 **.code-workspace
 **.txt
+
+# SO
+.DS_Store
+Thumbs.db
