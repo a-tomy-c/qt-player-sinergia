@@ -5,6 +5,7 @@ from rsc.widgets.widget_window.ui_main_window import Ui_MainWindow
 from rsc.widgets.widget_body import WidgetBody
 from rsc.widgets.widget_playlist import WidgetPlaylist
 from rsc.widgets.widget_control import WidgetControl
+from rsc.configuration_loader import settings as sg
 
 
 class WidgetWindow(QMainWindow, Ui_MainWindow):
@@ -18,6 +19,7 @@ class WidgetWindow(QMainWindow, Ui_MainWindow):
         self.__add_wg_body()
         self.__add_wg_playlist()
         self.__add_wg_control()
+        self.__apply_configurations()
 
     def __add_wg_body(self):
         self.w_body = WidgetBody()
@@ -30,3 +32,14 @@ class WidgetWindow(QMainWindow, Ui_MainWindow):
     def __add_wg_control(self):
         self.w_control = WidgetControl()
         self.vly_content.addWidget(self.w_control)
+        # self.vly_content.setStretchFactor(self.w_body, 20)
+        self.w_control.setMaximumHeight(54)
+
+
+    def __apply_configurations(self):
+        self.setWindowTitle(sg.get('title', 'Sinergia'))
+        width = sg.get('window.width', 600)
+        height = sg.get('window.height', 380)
+        self.resize(width,height)
+        width_playlist = sg.get('w-playlist.width', 200)
+        self.w_body.split_body.setSizes([width_playlist, width-width_playlist])

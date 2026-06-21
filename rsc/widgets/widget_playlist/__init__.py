@@ -15,4 +15,6 @@ class WidgetPlaylist(QWidget, Ui_WidgetPlaylist):
 
     def __fix_ui(self):
         self.fr_1.setHidden(True)
+        self.fr_2.setMaximumHeight(24)
+        self.fr_2.setMinimumHeight(24)
 

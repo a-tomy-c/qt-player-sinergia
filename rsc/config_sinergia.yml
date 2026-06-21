@@ -1,0 +1,10 @@
+type: configuration
+title: Sinergia Player
+version: 1.0
+
+window:
+  width: 800
+  height: 500
+
+w-playlist:
+  width: 250

@@ -12,6 +12,10 @@ class WidgetControl(QWidget, Ui_WidgetControl):
 
     def __cnf_WidgetControl(self):
         ...
+        # self.__fix_ui()
         # self.setWindowTitle('WidgetControl')
         # self.resize(450, 180)
 
+    # def __fix_ui(self):
+    #     self.fr_btns.setMaximumHeight(36)
+    #     self.fr_btns.setStyleSheet('background-color: blue;')

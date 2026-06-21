@@ -27,7 +27,7 @@ class Ui_WidgetBody(object):
         self.vly_margin = QVBoxLayout(WidgetBody)
         self.vly_margin.setSpacing(0)
         self.vly_margin.setObjectName(u"vly_margin")
-        self.vly_margin.setContentsMargins(4, 4, 4, 4)
+        self.vly_margin.setContentsMargins(0, 0, 0, 0)
         self.split_body = QSplitter(WidgetBody)
         self.split_body.setObjectName(u"split_body")
         self.split_body.setOrientation(Qt.Orientation.Horizontal)

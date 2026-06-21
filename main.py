@@ -10,8 +10,7 @@ class SinergiaPlayer(WidgetWindow):
         self.__cnf_SinergiaPlayer()
 
     def __cnf_SinergiaPlayer(self):
-        self.setWindowTitle('SinergiaPlayer')
-        self.resize(800, 500)
+        ...
 
     
 

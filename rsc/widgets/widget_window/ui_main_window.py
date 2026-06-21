@@ -46,7 +46,7 @@ class Ui_MainWindow(object):
         self.vly_fr_content.setObjectName(u"vly_fr_content")
         self.vly_fr_content.setContentsMargins(0, 0, 0, 0)
         self.vly_content = QVBoxLayout()
-        self.vly_content.setSpacing(2)
+        self.vly_content.setSpacing(0)
         self.vly_content.setObjectName(u"vly_content")
 
         self.vly_fr_content.addLayout(self.vly_content)
